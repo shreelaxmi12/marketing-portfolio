@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreelaxmi — Marketing Portfolio</title>
+<style>
+:root{
+  --bg:#f7f2f1; --paper:#fffaf8; --ink:#2d2528; --muted:#766b70;
+  --pink:#d67d95; --pink2:#f2d8df; --line:#e7d9dd; --dark:#1f1a1c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:20;background:rgba(247,242,241,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:18px 5vw}
+.logo{font-weight:800;letter-spacing:.08em}
+.navlinks{display:flex;gap:22px;font-size:13px;color:var(--muted)}
+.navlinks a:hover{color:var(--pink)}
+.hero{min-height:92vh;padding:8vh 7vw;display:grid;grid-template-columns:1.2fr .8fr;gap:6vw;align-items:center}
+.kicker{font-size:12px;letter-spacing:.16em;color:var(--pink);font-weight:800}
+h1{font-size:clamp(48px,7vw,92px);line-height:.92;margin:20px 0}
+.hero p{font-size:20px;line-height:1.5;color:var(--muted);max-width:650px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:14px 20px;border-radius:999px;border:1px solid var(--pink);font-weight:700;font-size:13px}
+.btn.primary{background:var(--pink);color:white}
+.hero-card{background:var(--paper);border:1px solid var(--line);padding:24px;transform:rotate(2deg);box-shadow:0 25px 70px rgba(60,30,40,.10)}
+.hero-card .window{height:410px;background:linear-gradient(135deg,#f3dce3,#e9b7c5);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;font-size:28px;letter-spacing:.05em}
+section{padding:100px 7vw}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}
+.section-head h2{font-size:46px;margin:8px 0}
+.section-head p{max-width:520px;color:var(--muted);line-height:1.6}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);padding:28px;border-radius:4px}
+.card h3{margin:0 0 12px;font-size:22px}
+.card p{color:var(--muted);line-height:1.65}
+.tag{display:inline-block;background:var(--pink2);padding:7px 10px;border-radius:999px;font-size:11px;font-weight:800;margin:4px 4px 0 0}
+.work{min-height:250px;display:flex;flex-direction:column;justify-content:space-between}
+.work .number{font-size:12px;color:var(--pink);font-weight:800}
+.skill-list{columns:2;column-gap:40px}
+.skill-list div{padding:10px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.skill-list strong{display:block}
+.skill-list span{color:var(--muted);font-size:13px}
+.case{background:var(--dark);color:white;padding:70px 7vw}
+.case p{color:#d8ced1}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.case img{width:100%;border-radius:4px}
+.cert{display:grid;grid-template-columns:1.4fr .6fr;gap:30px;align-items:center}
+.cert img{width:100%;border:1px solid var(--line);background:white}
+.timeline{border-left:2px solid var(--pink);padding-left:25px}
+.timeline div{margin:0 0 25px}
+.contact{background:var(--pink2);text-align:center}
+footer{padding:30px 7vw;color:var(--muted);font-size:12px;text-align:center}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s ease}
+.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){
+ .hero,.grid2,.grid3,.case-grid,.cert{grid-template-columns:1fr}
+ .navlinks{display:none}.hero{padding-top:60px}.skill-list{columns:1}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">SHREELAXMI.</div>
+  <div class="navlinks">
+    <a href="#about">ABOUT</a><a href="#work">WORK</a><a href="#skills">SKILLS</a>
+    <a href="#certs">CERTIFICATIONS</a><a href="#contact">CONTACT</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="reveal">
+    <div class="kicker">MARKETING PORTFOLIO • 2026</div>
+    <h1>Marketing,<br>but make it<br><em>meaningful.</em></h1>
+    <p>I’m Shreelaxmi — a Computer Science graduate building a career at the intersection of <b>consumer insight, marketing strategy, analytics and creative thinking.</b></p>
+    <div class="buttons">
+      <a class="btn primary" href="#work">EXPLORE MY WORK ↓</a>
+      <a class="btn" href="#about">MEET ME</a>
+    </div>
+  </div>
+  <div class="hero-card reveal">
+    <div class="window">RESEARCH.<br>THINK.<br>CREATE.</div>
+  </div>
+</header>
+
+<section id="about">
+ <div class="section-head reveal">
+  <div><div class="kicker">01 — ABOUT ME</div><h2>The person<br>behind the portfolio.</h2></div>
+  <p>I started in Computer Science, which gave me a strong analytical foundation. I’m now intentionally moving toward marketing roles where I can combine data with consumer understanding and storytelling.</p>
+ </div>
+ <div class="grid2">
+  <div class="card reveal"><h3>My background</h3><p><b>BE Computer Science</b><br>CGPA 8.6 • Graduated 2025<br><br>Experience with analytics, AI/ML, automation, dashboards and research-style projects. My current focus is marketing, consumer insights, product marketing and marketing analytics.</p></div>
+  <div class="card reveal"><h3>How I think</h3><p>What is the consumer problem?<br>What does the data actually say?<br>What insight can we act on?<br>How can the idea be communicated simply?<br>How will we measure it?</p></div>
+ </div>
+</section>
+
+<section id="skills">
+ <div class="section-head reveal">
+  <div><div class="kicker">02 — SKILLS</div><h2>What I can<br>bring to a team.</h2></div>
+  <p>Not just a list of software — these are the ways I can contribute to marketing work.</p>
+ </div>
+ <div class="grid2">
+  <div class="card reveal">
+   <h3>Marketing & Consumer Insights</h3>
+   <span class="tag">Market Research</span><span class="tag">Consumer Research</span><span class="tag">Segmentation</span><span class="tag">Personas</span><span class="tag">Customer Journey</span><span class="tag">Positioning</span><span class="tag">Campaign Concepts</span><span class="tag">Content Strategy</span>
+  </div>
+  <div class="card reveal">
+   <h3>Analytics</h3>
+   <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">KPI Analysis</span><span class="tag">Data Storytelling</span>
+  </div>
+  <div class="card reveal">
+   <h3>AI & Automation</h3>
+   <span class="tag">N8N</span><span class="tag">RAG</span><span class="tag">FAISS</span><span class="tag">Sentence Transformers</span><span class="tag">DistilBERT</span><span class="tag">HuggingFace</span><span class="tag">AI-assisted workflows</span>
+  </div>
+  <div class="card reveal">
+   <h3>Tools & Execution</h3>
+   <span class="tag">Google Sheets</span><span class="tag">Power BI</span><span class="tag">Looker Studio</span><span class="tag">Git</span><span class="tag">Canva</span><span class="tag">AI Creative Tools</span><span class="tag">Presentation Design</span>
+  </div>
+ </div>
+</section>
+
+<section id="work">
+ <div class="section-head reveal">
+  <div><div class="kicker">03 — SELECTED WORK</div><h2>Two projects.<br>Two sides of me.</h2></div>
+  <p>I’m keeping this portfolio intentionally focused: one project shows how I think like a marketer, and one shows how I build practical analytics and automation workflows.</p>
+ </div>
+
+ <div class="card reveal" style="margin-bottom:28px;padding:34px">
+   <div class="number" style="color:var(--pink);font-weight:800;font-size:12px">01 / FEATURED MARKETING PROJECT</div>
+   <div class="grid2" style="margin-top:18px;align-items:start">
+     <div>
+       <h3 style="font-size:30px">Skincare Consumer & Market Research</h3>
+       <p><b>Question:</b> What factors influence skincare preferences and purchasing decisions among Indian Gen Z consumers?</p>
+       <p>This project combines secondary research with a primary survey of <b>27 eligible respondents aged 18–27</b>, then turns the findings into consumer insights, personas, strategy and a hypothetical campaign.</p>
+
+       <div style="margin-top:20px">
+         <span class="tag">Consumer Research</span>
+         <span class="tag">Market Research</span>
+         <span class="tag">Segmentation</span>
+         <span class="tag">Strategy</span>
+         <span class="tag">Campaign</span>
+       </div>
+
+       <div class="grid3" style="margin-top:25px">
+         <div style="text-align:center"><div style="font-size:28px;font-weight:800;color:var(--pink)">63%</div><small style="color:var(--muted)">choice overload</small></div>
+         <div style="text-align:center"><div style="font-size:28px;font-weight:800;color:var(--pink)">48.1%</div><small style="color:var(--muted)">suitability friction</small></div>
+         <div style="text-align:center"><div style="font-size:28px;font-weight:800;color:var(--pink)">4.48/5</div><small style="color:var(--muted)">effectiveness importance</small></div>
+       </div>
+     </div>
+
+     <div>
+       <div class="card" style="background:var(--bg)">
+         <h3 style="font-size:18px">Research snapshot</h3>
+         <div style="margin:16px 0">
+           <div style="display:flex;justify-content:space-between;font-size:12px"><span>Instagram discovery</span><b>63%</b></div>
+           <div style="height:8px;background:var(--pink2);margin:6px 0 14px"><div style="width:63%;height:100%;background:var(--pink)"></div></div>
+           <div style="display:flex;justify-content:space-between;font-size:12px"><span>Too many choices</span><b>63%</b></div>
+           <div style="height:8px;background:var(--pink2);margin:6px 0 14px"><div style="width:63%;height:100%;background:var(--pink)"></div></div>
+           <div style="display:flex;justify-content:space-between;font-size:12px"><span>Skin-type suitability</span><b>48.1%</b></div>
+           <div style="height:8px;background:var(--pink2);margin:6px 0 14px"><div style="width:48.1%;height:100%;background:var(--pink)"></div></div>
+           <div style="display:flex;justify-content:space-between;font-size:12px"><span>Dermatologist trust</span><b>40.7%</b></div>
+           <div style="height:8px;background:var(--pink2);margin:6px 0"><div style="width:40.7%;height:100%;background:var(--pink)"></div></div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="card" style="margin-top:24px;background:var(--dark);color:white">
+     <div class="kicker" style="color:#f4b7c8">FROM RESEARCH → STRATEGY → CREATIVE</div>
+     <h3 style="font-size:24px;margin-top:10px">The core insight</h3>
+     <p style="color:#d8ced1">Consumers have more skincare choices than ever, but many lack confidence in choosing what is right for their individual needs.</p>
+     <p style="color:#d8ced1"><b style="color:white">Strategy:</b> Make skincare easier to choose, understand and trust.</p>
+     <p style="color:#d8ced1"><b style="color:white">Campaign:</b> “Your skin called. It doesn't want 12 serums.”</p>
+     <a class="btn primary" href="#campaign">VIEW CAMPAIGN ↓</a>
+   </div>
+ </div>
+
+ <div class="card reveal" style="padding:34px">
+   <div class="number" style="color:var(--pink);font-weight:800;font-size:12px">02 / AUTOMATION & ANALYTICS</div>
+   <div class="grid2" style="margin-top:18px;align-items:start">
+     <div>
+       <h3 style="font-size:30px">Automated BI & KPI Reporting Pipeline</h3>
+       <p><b>Problem:</b> Repetitive reporting becomes slow and inconsistent when lead data needs to be cleaned, standardized and summarized manually.</p>
+       <p>I built an <b>N8N + Google Sheets</b> workflow that processes lead data, standardizes fields and produces repeatable KPI reporting.</p>
+       <div style="margin-top:20px">
+         <span class="tag">N8N</span>
+         <span class="tag">Google Sheets</span>
+         <span class="tag">Data Cleaning</span>
+         <span class="tag">KPI Automation</span>
+         <span class="tag">Reporting</span>
+       </div>
+     </div>
+     <div class="card" style="background:var(--bg)">
+       <h3 style="font-size:18px">Workflow</h3>
+       <div class="timeline">
+         <div><b>01 — INPUT</b><br><span style="color:var(--muted);font-size:13px">Lead data enters the workflow.</span></div>
+         <div><b>02 — STANDARDIZE</b><br><span style="color:var(--muted);font-size:13px">Fields and values are cleaned into a consistent structure.</span></div>
+         <div><b>03 — CALCULATE</b><br><span style="color:var(--muted);font-size:13px">KPIs are calculated from the standardized data.</span></div>
+         <div><b>04 — REPORT</b><br><span style="color:var(--muted);font-size:13px">A repeatable reporting output makes recurring analysis easier.</span></div>
+       </div>
+     </div>
+   </div>
+   <div class="grid3" style="margin-top:25px">
+     <div class="card" style="text-align:center"><div style="font-size:24px;font-weight:800;color:var(--pink)">AUTOMATED</div><small style="color:var(--muted)">repeatable workflow</small></div>
+     <div class="card" style="text-align:center"><div style="font-size:24px;font-weight:800;color:var(--pink)">STANDARDIZED</div><small style="color:var(--muted)">cleaner data structure</small></div>
+     <div class="card" style="text-align:center"><div style="font-size:24px;font-weight:800;color:var(--pink)">MEASURABLE</div><small style="color:var(--muted)">KPI-focused reporting</small></div>
+   </div>
+ </div>
+</section>
+
+<section id="campaign" class="case">
+ <div class="case-grid">
+  <div class="reveal">
+   <div class="kicker" style="color:#f4b7c8">FEATURED CAMPAIGN</div>
+   <h2 style="font-size:52px;margin:15px 0">Know Your Skin.<br>Know Your Routine.</h2>
+   <p style="font-size:18px;line-height:1.7">A hypothetical skincare campaign built from my consumer research. The creative turns a research insight into a simple marketing idea.</p>
+   <p><b>Consumer signal:</b> 63% of respondents said too many products/choices was a challenge.</p>
+   <p><b>Core thought:</b> Consumers don't necessarily need more skincare — they need more confidence in choosing it.</p>
+   <a class="btn primary" href="know-your-skin-reel.mp4">WATCH THE REEL →</a>
+  </div>
+  <div class="reveal">
+   <img src="a_vertical_split_composite_lifestyle_beauty_scene.png" alt="Skincare campaign visual">
+  </div>
+ </div>
+</section>
+
+<section id="certs">
+ <div class="section-head reveal">
+  <div><div class="kicker">04 — CERTIFICATIONS</div><h2>Proof of learning.</h2></div>
+  <p>Curated credentials that support the direction I’m building toward.</p>
+ </div>
+ <div class="cert">
+  <div class="reveal"><img src="google-ads-certificate.png" alt="Google Ads Search Certification 2026"></div>
+  <div class="card reveal">
+   <div class="kicker">GOOGLE ADS</div>
+   <h3>Google Ads Search Certification</h3>
+   <p><b>2026</b><br>Issued: 16 September 2026<br>Expiry: 16 September 2027</p>
+   <p>This adds a paid-search and digital advertising credential to my marketing toolkit.</p>
+  </div>
+ </div>
+ <div class="grid2" style="margin-top:30px">
+  <div class="card reveal"><div class="kicker">NEXT</div><h3>Market Research</h3><p>Great Learning — Market Research course. Certificate will be added once purchased.</p></div>
+  <div class="card reveal"><div class="kicker">LEARNING RULE</div><h3>Proof > badge collection.</h3><p>I’m building credentials around the roles I want: marketing, advertising, consumer insights, analytics and product marketing.</p></div>
+ </div>
+</section>
+
+<section>
+ <div class="section-head reveal">
+  <div><div class="kicker">05 — WHAT I CAN DO</div><h2>Useful from day one.</h2></div>
+  <p>I’m early-career, so I focus on practical contribution rather than pretending to have senior-level experience.</p>
+ </div>
+ <div class="grid3">
+  <div class="card reveal"><h3>Research</h3><p>Desk research, surveys, competitor scans, consumer pain points and insight summaries.</p></div>
+  <div class="card reveal"><h3>Content</h3><p>Content themes, campaign concepts, social ideas, messaging and presentation storytelling.</p></div>
+  <div class="card reveal"><h3>Analytics</h3><p>Data cleaning, KPI tracking, dashboards and turning numbers into clear business takeaways.</p></div>
+  <div class="card reveal"><h3>Campaigns</h3><p>Brief → audience → insight → creative idea → measurement.</p></div>
+  <div class="card reveal"><h3>Consumer Insights</h3><p>Personas, journeys, segmentation and identifying opportunity areas.</p></div>
+  <div class="card reveal"><h3>AI + Automation</h3><p>Use AI and automation to speed up research, reporting and creative workflows.</p></div>
+ </div>
+</section>
+
+<section>
+ <div class="section-head reveal">
+  <div><div class="kicker">06 — MY EDGE</div><h2>Why this combination?</h2></div>
+ </div>
+ <div class="grid2">
+  <div class="card reveal"><h3>Technical foundation</h3><p>Computer Science trained me to structure problems, work with data and learn tools quickly.</p></div>
+  <div class="card reveal"><h3>Marketing direction</h3><p>I’m applying that analytical mindset to consumer questions, strategy, communication and measurable marketing outcomes.</p></div>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="reveal">
+  <div class="kicker">LET'S CONNECT</div>
+  <h2 style="font-size:55px;margin:15px 0">Let's build something useful.</h2>
+  <p style="font-size:18px;color:var(--muted)">Marketing • Consumer Insights • Product Marketing • Marketing Analytics</p>
+  <div class="buttons" style="justify-content:center">
+   <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">EMAIL ME</a>
+   <a class="btn" href="#">LINKEDIN</a>
+   <a class="btn" href="#">GITHUB</a>
+  </div>
+ </div>
+</section>
+<footer>© 2026 Shreelaxmi • Marketing Portfolio</footer>
+
+<script>
+const io=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
